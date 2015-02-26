@@ -24,5 +24,25 @@ namespace KozpontiApp
         {
             InitializeComponent();
         }
+
+        private void Mosogepek_Click(object sender, RoutedEventArgs e)
+        {
+            new mosogepek();
+        }
+
+        private void KoliProxy_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ProxyKi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MásProxy_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
