@@ -62,6 +62,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Főweblapolvasó.cs" />
+    <Compile Include="Kondi.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -82,6 +84,7 @@
     <Compile Include="MásikProxy.xaml.cs">
       <DependentUpon>MásikProxy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Nyomtatós.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -111,6 +114,7 @@
   <ItemGroup>
     <Resource Include="106355.jpg" />
     <Resource Include="1147209_1_mosogep.jpg" />
+    <Resource Include="kk_logo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />

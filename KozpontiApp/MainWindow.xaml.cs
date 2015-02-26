@@ -35,34 +35,40 @@ namespace KozpontiApp
             InitializeComponent();
         }
 
+        private void setProxy(string proxycím, int állapot, string popup = "")
+        {
+            RegistryKey registry = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings", true);
+            registry.SetValue("ProxyEnable", állapot);
+            registry.SetValue("ProxyServer", proxycím);
+
+            // These lines implement the Interface in the beginning of program 
+            // They cause the OS to refresh the settings, causing IP to realy update
+            settingsReturn = InternetSetOption(IntPtr.Zero, INTERNET_OPTION_SETTINGS_CHANGED, IntPtr.Zero, 0);
+            refreshReturn = InternetSetOption(IntPtr.Zero, INTERNET_OPTION_REFRESH, IntPtr.Zero, 0);
+            MessageBox.Show(popup);
+        }
+
         private void Mosogepek_Click(object sender, RoutedEventArgs e)
         {
-            new mosogepek();
+            RegistryKey registry = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings", true);
+            try
+            {
+                new mosogepek().Show();
+            }
+            catch
+            {
+                MessageBox.Show("Ez a funkció csak kolis proxyval, a KK-n belüli vezetékes hálózaton működik!!!");
+            }
         }
 
         private void KoliProxy_Click(object sender, RoutedEventArgs e)
         {
-            RegistryKey registry = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings", true);
-            registry.SetValue("ProxyEnable", 1);
-            registry.SetValue("ProxyServer", "proxy.vekoll.uni-pannon.hu:3128");
-
-            // These lines implement the Interface in the beginning of program 
-            // They cause the OS to refresh the settings, causing IP to realy update
-            settingsReturn = InternetSetOption(IntPtr.Zero, INTERNET_OPTION_SETTINGS_CHANGED, IntPtr.Zero, 0);
-            refreshReturn = InternetSetOption(IntPtr.Zero, INTERNET_OPTION_REFRESH, IntPtr.Zero, 0);
-            MessageBox.Show("Koli proxy beállítva!");
+            setProxy("proxy.vekoll.uni-pannon.hu:3128", 1, "Koli proxy beállítva!");
         }
 
         private void ProxyKi_Click(object sender, RoutedEventArgs e)
         {
-            RegistryKey registry = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings", true);
-            registry.SetValue("ProxyEnable", 0);
-
-            // These lines implement the Interface in the beginning of program 
-            // They cause the OS to refresh the settings, causing IP to realy update
-            settingsReturn = InternetSetOption(IntPtr.Zero, INTERNET_OPTION_SETTINGS_CHANGED, IntPtr.Zero, 0);
-            refreshReturn = InternetSetOption(IntPtr.Zero, INTERNET_OPTION_REFRESH, IntPtr.Zero, 0);
-            MessageBox.Show("Proxy kikapcsolva!");
+            setProxy("", 0, "Proxy kikapcsolva!");
         }
 
         private void MásProxy_Click(object sender, RoutedEventArgs e)
@@ -79,6 +85,16 @@ namespace KozpontiApp
         private void Weblap_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Nyomtatós_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://info.kozpontikoli.hu/");
         }
     }
 }

@@ -14,39 +14,40 @@
             <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button Name="Mosogepek" Content="Mosógépek" Click="Mosogepek_Click"
+        <Button x:Name="Mosogepek" Content="Mosógépek" Click="Mosogepek_Click"
                 Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"
-                Height="30" Width="150" BorderThickness="2">
-        </Button>
-        <Button Name="Kondi" Content="Kondi" Click="Kondi_Click"
+                Height="30" Width="150" BorderThickness="2"/>
+        <Button x:Name="Kondi" Content="Kondi" Click="Kondi_Click"
                 Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center"
-                Height="30" Width="150" BorderThickness="2">
-        </Button>
-        <Button Name="Weblap" Content="Koli oldal" Click="Weblap_Click"
+                Height="30" Width="150" BorderThickness="2"/>
+        <Button x:Name="Nyomtatós" Content="Nyomtatós" Click="Nyomtatós_Click"
                 Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center"
-                Height="30" Width="150" BorderThickness="2">
-        </Button>
-        <Button Name="KoliProxy" Content="KoliProxy" Click="KoliProxy_Click"
+                Height="30" Width="150" BorderThickness="2"/>
+        <Button x:Name="KoliProxy" Content="KoliProxy" Click="KoliProxy_Click"
                 Grid.Column="3" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
-                Height="30" Width="150" BorderThickness="2">
-        </Button>
-        <Button Name="MásProxy" Content="Másik Proxy beállítása" Click="MásProxy_Click"
+                Height="30" Width="150" BorderThickness="2"/>
+        <Button x:Name="MásProxy" Content="Másik Proxy beállítása" Click="MásProxy_Click"
                 Grid.Column="3" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center"
-                Height="30" Width="150" BorderThickness="2">
-        </Button>
-        <Button Name="ProxyKi" Content="Proxy Kikapcs" Click="ProxyKi_Click"
+                Height="30" Width="150" BorderThickness="2"/>
+        <Button x:Name="ProxyKi" Content="Proxy Kikapcs" Click="ProxyKi_Click"
                 Grid.Column="3" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center"
-                Height="30" Width="150" BorderThickness="2">
+                Height="30" Width="150" BorderThickness="2"/>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6" Grid.Column="2" Click="Button_Click" Height="63.778"
+                Margin="0,37.403,0,0" Grid.RowSpan="2" Width="63.778" BorderBrush="#FF707070">
+        	<Button.Background>
+        		<ImageBrush ImageSource="kk_logo.jpg" Stretch="Uniform"/>
+        	</Button.Background>
         </Button>
-        
     </Grid>
 </Window>
