@@ -1,14 +1,17 @@
 ﻿<Window x:Class="KozpontiApp.mosogepek"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Mosogepek" Height="300" Width="784" Closing="bezaras">
+        Title="Mosogepek" Height="300" Width="784" Closing="bezaras" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="20"></Setter>
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
         </Style>
     </Window.Resources>
-    <Grid Background="Beige">
+    <Grid>
+    	<Grid.Background>
+    		<ImageBrush ImageSource="1147209_1_mosogep.jpg"/>
+    	</Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -16,19 +19,19 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Border Grid.Column="0" Name="elso_mosogep">
+        <Border Grid.Column="0" Name="elso_mosogep" Background="White" Opacity="0.25">
             <TextBlock Text="Első" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
-        <Border Grid.Column="1" Name="masodik_mosogep">
+        <Border Grid.Column="1" Name="masodik_mosogep" Background="#FFD3E7FF" Opacity="0.5">
             <TextBlock Text="Második" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
-        <Border Grid.Column="2" Name="harmadik_mosogep">
+        <Border Grid.Column="2" Name="harmadik_mosogep" Background="White" Opacity="0.25">
             <TextBlock Text="Harmadik" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
-        <Border Grid.Column="3" Name="negyedik_mosogep">
+        <Border Grid.Column="3" Name="negyedik_mosogep" Background="#FFD3E7FF" Opacity="0.5">
             <TextBlock Text="Negyedik" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
-        <Border Grid.Column="4" Name="otodik_mosogep">
+        <Border Grid.Column="4" Name="otodik_mosogep" Background="White" Opacity="0.25">
             <TextBlock Text="Ötödik" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
     </Grid>
