@@ -115,6 +115,7 @@
     <Resource Include="106355.jpg" />
     <Resource Include="1147209_1_mosogep.jpg" />
     <Resource Include="kk_logo.jpg" />
+    <Resource Include="mosogep_ikon.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />

@@ -1,7 +1,7 @@
 ﻿<Window x:Class="KozpontiApp.mosogepek"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Mosogepek" Height="300" Width="784" Closing="bezaras" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="Mosogepek" Height="300" Width="784" Closing="bezaras" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="mosogep_ikon.jpg">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="20"></Setter>
