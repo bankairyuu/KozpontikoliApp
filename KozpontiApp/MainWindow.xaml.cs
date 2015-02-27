@@ -78,7 +78,8 @@ namespace KozpontiApp
 
         private void Kondi_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Ez a funkció még nincs kész, de érkezik :)");
+            new Kondi(Kondi);
+            //MessageBox.Show("Ez a funkció még nincs kész, de érkezik :)");
         }
 
         private void Nyomtatós_Click(object sender, RoutedEventArgs e)
