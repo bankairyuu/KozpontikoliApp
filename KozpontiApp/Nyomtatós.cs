@@ -14,7 +14,7 @@ namespace KozpontiApp
         public Nyomtatós(Button b)
         {
             this.b = b;
-            színezés(b, lenyeg(3));
+            színezés(b, lenyeg("NYOMTATÓS"));
         }
     }
 }

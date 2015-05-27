@@ -14,7 +14,7 @@ namespace KozpontiApp
         public Kondi(Button b)
         {
             this.b = b;
-            színezés(b, lenyeg(1));
+            színezés(b, lenyeg("KONDITEREM"));
         }
 
         
