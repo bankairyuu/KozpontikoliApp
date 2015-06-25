@@ -92,5 +92,10 @@ namespace KozpontiApp
         {
             System.Diagnostics.Process.Start("http://info.kozpontikoli.hu/");
         }
+
+        private void Időzítő_Click(object sender, RoutedEventArgs e)
+        {
+            new Idozito().Show();
+        }
     }
 }
