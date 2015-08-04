@@ -14,21 +14,26 @@
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <ExpressionBlendVersion>12.0.51020.0</ExpressionBlendVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>F:\programok\Központi Koli App\</PublishUrl>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://siliconvalley.atw.hu/KozpontiApp/</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://siliconvalley.atw.hu/KozpontiApp/</InstallUrl>
+    <SupportUrl>http://siliconvalley.atw.hu</SupportUrl>
     <TargetCulture>hu-HU</TargetCulture>
     <ProductName>Központi Koli App</ProductName>
     <PublisherName>Sipos István Krisztián - Krisz</PublisherName>
-    <ApplicationRevision>3</ApplicationRevision>
+    <SuiteName>bankairyuu%40gmail.com</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>kozpontikoliapp.htm</WebPage>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

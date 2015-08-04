@@ -85,6 +85,7 @@ namespace KozpontiApp
                 mperc.Visibility = System.Windows.Visibility.Visible;
                 visszaszámláló.Visibility = System.Windows.Visibility.Hidden;
 
+                for (int i=0; i<5; i++)
                 SystemSounds.Beep.Play();
                 MessageBox.Show("Lejárt az idő!");
                 
